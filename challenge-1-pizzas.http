@@ -1,0 +1,28 @@
+# challenge-1-pizzas
+
+###
+# @name restaurants
+GET http://localhost:5555/restaurants
+
+###
+# @name pizzas
+GET http://localhost:5555/pizzas
+
+###
+# @name restaurants/<int:id>
+GET http://localhost:5555/restaurants/1
+
+###
+# @name restaurants/<int:id>
+DELETE http://localhost:5555/restaurants/1
+
+###
+# @name restaurant_pizzas
+POST http://localhost:5555/restaurant_pizzas
+Content-Type: application/json
+
+{
+  "price": 5,
+  "pizza_id": 1,
+  "restaurant_id": 3
+}
